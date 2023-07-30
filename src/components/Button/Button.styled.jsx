@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
+export const WrapperButton = styled.div`
+    text-align: center;
+    margin-bottom: 20px;
+`;
+
 export const ButtonStyle = styled.button`
   padding: 8px 16px;
+  margin-left: auto;
   border-radius: 2px;
   background-color: #3f51b5;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
