@@ -101,7 +101,12 @@ export class App extends Component {
     if (searchValue === '') {
       Notify.info('Enter your request, please!', paramsForNotify);
       return;
-    }
+    };
+
+    if (searchValue === this.state.search) {
+      Notify.info('Enter new request, please!', paramsForNotify);
+      return;
+    };
 
     this.setState({
       search: searchValue,
@@ -109,7 +114,7 @@ export class App extends Component {
       photos: [],
     });
     
-    form.reset();
+    // form.reset();
   }
 
   render() {
